@@ -9,7 +9,7 @@ int main()
     cout<<"enter the element in array:";
     for (i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        cin>>arr[i];
     }
     for (i = 0; i < n; i++)
     {

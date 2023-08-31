@@ -17,10 +17,11 @@ int fun(struct student* x)
     printf("phoneNo :%d\n",x->phoneNO);
    
 }
-int main()
-{
-    struct student p[2];
-    printf("enter information of student\n");
+int inputFun()
+{   struct student p[2];
+    // int n;
+    // printf("who many student:");
+    // scanf("%d",&n);
     for(int i=0;i<2;i++)
     {
         printf("for student %d\n",i+1);
@@ -35,9 +36,33 @@ int main()
         printf("enter phoneNo of student:");
         scanf("%d",p[i].phoneNO);
     } 
-    printf("displaying student details:");
+    printf("\ndisplaying student details:\n");
     for(int i=0;i<2;i++)
     {   printf("\nstudent :%d\n",i+1);
         fun(&p[i]);
     }
+}
+int main()
+{   
+    printf("enter information of student\n");
+    inputFun();
+    // for(int i=0;i<2;i++)
+    // {
+    //     printf("for student %d\n",i+1);
+    //     printf("enter the name of student:");
+    //     scanf(" %[^\n]s",p[i].name);
+    //     printf("enter the regNo of student:");
+    //     scanf("%d",p[i].regNo);
+    //     printf("enter mark of sum of 5 subject:");
+    //     scanf("%d",p[i].mark);
+    //     printf("enter address of student :");
+    //     scanf(" %[^\n]s",p[i].address);
+    //     printf("enter phoneNo of student:");
+    //     scanf("%d",p[i].phoneNO);
+    // } 
+    // printf("displaying student details:");
+    // for(int i=0;i<2;i++)
+    // {   printf("\nstudent :%d\n",i+1);
+    //     fun(&p[i]);
+    // }
 }
