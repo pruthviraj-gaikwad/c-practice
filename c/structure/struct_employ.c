@@ -21,21 +21,6 @@ int inputFun(int *x, int *m)
 {
     int r=m-x+1;
     struct employ e(r);
-    // for (int i = 0; i < 2; i++)
-    // {
-    //     printf("\nfor employ :%d\n", i + 1);
-    //     printf("enter employ name:");
-    //     scanf(" %[^\n]s", e[i].employName);
-    //     printf("enter the id of employ:");
-    //     scanf("%d", &e[i].employId);
-    //     printf("enter the address of employ:");
-    //     scanf(" %[^\n]s", e[i].employAddress);
-    //     printf("your dessignesion:");
-    //     scanf(" %[^\n]s", e[i].dessignesion);
-    //     printf("enter the salarr per month:");
-    //     scanf("%f",&e[i].salary);
-    // }
-    // int** i = &x;
     printf("\nfor employ :%d\n", r);
     printf("enter employ name:");
     scanf(" %[^\n]s", e(r).employName);

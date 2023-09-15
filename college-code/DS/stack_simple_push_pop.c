@@ -45,26 +45,13 @@ int main() {
     push(&stack, 30);
     push(&stack, 90);
     push(&stack, 70);
-    push(&stack, 80);
-    push(&stack, 68);
-    push(&stack, 49);
-    push(&stack, 30);
-    push(&stack, 58);
-    push(&stack, 70);
-    push(&stack, 51);
+    
 
     printf("Popped: %d\n", pop(&stack));
     printf("Popped: %d\n", pop(&stack));
     printf("Popped: %d\n", pop(&stack));
     printf("Popped: %d\n", pop(&stack));
     printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
-    printf("Popped: %d\n", pop(&stack));
+   
     return 0;
 }
