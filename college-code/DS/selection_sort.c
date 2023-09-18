@@ -1,34 +1,36 @@
 #include <stdio.h>
-int sort(int *arr, int n)
+
+void selectionSort(int arr[], int n)
 {
-    int temp;
-    for (int i = 0; i < n - 1; i++)
+    int i, j, minIndex, temp;
+    for (i = 0; i < n - 1; i++)
     {
-        int y = i;
-        for (int j = i + 1; j < n; j++)
+        minIndex = i;
+        for (j = i + 1; j < n; j++)
         {
-            if (arr[j] < arr[y])
-            {
-                y = j;
-            }
+            if (arr[j] < arr[minIndex])
+                minIndex = j;
         }
-        temp = arr[i];
-        arr[i] = arr[y];
-        arr[y] = temp;
-    }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
+        temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
     }
 }
+
 int main()
 {
-    int arr[100];
-    int n;
-    scanf("%d",&n);
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Unsorted array: ");
     for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-    sort(arr, n);
+        printf("%d ", arr[i]);
+
+    selectionSort(arr, n);
+
+    printf("\nSorted array: ");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    return 0;
 }

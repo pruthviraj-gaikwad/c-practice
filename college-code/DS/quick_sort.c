@@ -3,7 +3,7 @@ void printArr(int *a, int n)
 {
     for (int i = 0; i < n; i++)
     {
-        printf("%d \n", a[i]);
+        printf("%d ", a[i]);
     }
 }
 int partition(int a[], int low, int high)
@@ -49,7 +49,10 @@ int main()
 {
     int a[] = {10, 60, 3, 5, 3, 2};
     int n = 6;
+    printf("unsorted array:");
     printArr(a, n);
+    printf("\n");
     quicksort(a, 0, n - 1);
+    printf("sorted array:");
     printArr(a, n);
 }

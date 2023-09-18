@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define size 5
+#define size 100
 struct stack
 {
     // int size;

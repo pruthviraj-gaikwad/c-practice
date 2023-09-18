@@ -22,7 +22,8 @@ int main()
         if (c == a[mid])
         {
             found++;
-            printf("element is found at %d and has index %d\n", mid + 1, i);
+            printf("element is found at %d and has index %d\n", mid + 1, mid);
+            break;
         }
         else if (c < a[mid])
         {

@@ -122,21 +122,21 @@ int main()
     five->next = six;
     six->data = 12;
     six->next = NULL;
-    // printf("befor insertion\n");
-    // printresult(head);
-    // struct node *y = insertion_at_first(head);
-    // printf("after insertion_at_first\n");
+    printf("befor insertion\n");
+    printresult(head);
+    struct node *y = insertion_at_first(head);
+    printf("after insertion_at_first\n");
 
-    // printresult(y);
-    // struct node *h = insertionIn(head, 2);
-    // printf("after insertionIn\n");
+    printresult(y);
+    struct node *h = insertionIn(head, 2);
+    printf("after insertionIn\n");
 
-    // printresult(h);
-    // struct node *j = insertion_at_last(head);
-    // printf("after insertion_at_last\n");
+    printresult(h);
+    struct node *j = insertion_at_last(head);
+    printf("after insertion_at_last\n");
 
-    // printresult(j);
-    // struct node *u = after_node(head, second, 70);
-    // printresult(u);
+    printresult(j);
+    struct node *u = after_node(head, second, 70);
+    printresult(u);
     printresult(delete_last(head));
 }

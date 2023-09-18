@@ -5,27 +5,16 @@ struct node
     int data;
     struct node *next;
 };
-// void displyList(struct node *head)
-// {
-//     struct node* ptr=head;
-//     do
-//     {
-//         printf("%d \n", ptr->data);
-//         ptr = ptr->next;
-//     } while (ptr != head);
-// }
 void displyList(struct node *head)
 {
-    struct node *ptr = head;
-    printf("%d\n", ptr->data);
-    ptr=ptr->next;
-    while (ptr != head)
+    struct node* ptr=head;
+    do
     {
         printf("%d \n", ptr->data);
         ptr = ptr->next;
-    }
-    
+    } while (ptr != head);
 }
+
 int main()
 {
     struct node *head;
