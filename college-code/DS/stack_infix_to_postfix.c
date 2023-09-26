@@ -7,6 +7,7 @@ struct stack
     int top;
     char arr[size];
 };
+
 int isEmpty(struct stack *q)
 {
     if (q->top == -1)
