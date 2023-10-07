@@ -10,4 +10,5 @@ int main()
     p=(struct rectangle *)malloc(sizeof(struct rectangle));
     p->x=35;
     printf("%d",p->x);
+    free(p);
 }

@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 struct node
 {
     int data;
     struct node *next;
 };
+
 void displyList(struct node *head)
 {
     struct node* ptr=head;
     do
     {
-        printf("%d \n", ptr->data);
+        printf("%d\n", ptr->data);
         ptr = ptr->next;
     } while (ptr != head);
 }
@@ -34,4 +36,8 @@ int main()
     fourth->data = 13;
     fourth->next = head;
     displyList(head);
+    free(head);
+    free(second);
+    free(third);
+    free(fourth);
 }

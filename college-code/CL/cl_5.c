@@ -1,3 +1,4 @@
+// Write a c program for calculator using inbuild function 
 #include <stdio.h>
 #include <math.h>
 
@@ -74,7 +75,9 @@ int main()
         scanf("%lf", &a);
         printf("enter second number:");
         scanf("%lf", &b);
-        printf("enter oprtation you want to perform \n1)add,2)Sub,3)mul,4)div,5)mod,6)square,7)square root,8)cube,9)cube root,10)log:");
+        printf("enter oprtation you want to perform" );
+        printf("\n1)add,2)Sub,3)mul,4)div,5)mod,\n");
+        printf("6)square,7)square root,8)cube,9)cube root,10)log:");
         scanf("%d", &n);
         switch (n)
         {

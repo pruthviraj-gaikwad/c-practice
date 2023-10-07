@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void AND(int a[], int b[])
 {
     printf("truth table for AND operation:\n");

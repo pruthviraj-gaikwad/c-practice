@@ -5,6 +5,7 @@ struct node
     int data;
     struct node *next;
 };
+
 void printresult(struct node *ptr)
 {
     int i = 0;
@@ -16,6 +17,7 @@ void printresult(struct node *ptr)
     }
     printf("\n");
 }
+
 struct node *insertion_at_first(struct node *head)
 {
     struct node *zero;
@@ -24,6 +26,7 @@ struct node *insertion_at_first(struct node *head)
     zero->next = head;
     return zero;
 }
+
 struct node *after_node(struct node *head, struct node *previous, int data)
 {
     struct node *zero;
@@ -33,6 +36,7 @@ struct node *after_node(struct node *head, struct node *previous, int data)
     previous->next = zero;
     return head;
 }
+
 struct node *insertionIn(struct node *head, int index)
 {
     struct node *ptr = (struct node *)malloc(sizeof(struct node));
@@ -139,4 +143,10 @@ int main()
     struct node *u = after_node(head, second, 70);
     printresult(u);
     printresult(delete_last(head));
+    free(head);
+    free(second);
+    free(thired);
+    free(fourth);
+    free(five);
+    free(six);
 }
