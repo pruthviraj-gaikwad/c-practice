@@ -27,7 +27,7 @@ char pop(struct stack *q)
     if (isEmpty(q))
         printf("can't pop it your stack is empty..");
     else
-        return q->arr[q->top--];
+        return q->arr[q->top--]; 
 }
 void push(struct stack *q, char ch)
 {

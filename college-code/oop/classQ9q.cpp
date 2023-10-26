@@ -3,29 +3,29 @@ using namespace std;
 
 class point;
 
-class mean
+class getTwoNo
 {
 public:
-    float findMean(point a);
+    float get(float a, float b);
 };
 
 class point
-{    
+{
     float x;
     float y;
 
 public:
-    friend float mean::findMean(point a);
-    float get(float a, float b);
+    float findMean(point a);
+    friend float get(float a,float b);
 };
 
-float point ::get(float a, float b)
+float getTwoNo ::get(float a, float b)
 {
     x = a;
     y = b;
 }
 
-float mean::findMean(point a)
+float point::findMean(point a)
 {
 
     float b = a.x + a.y;
@@ -38,13 +38,13 @@ int main()
     int c = 1;
     do
     {
-        point a;
+        getTwoNo a;
         int n, m;
         cout << "enter two number:";
         cin >> n;
         cin >> m;
         a.get(n, m);
-        mean b;
+        point b;
         float y = b.findMean(a);
         cout << "mean of a is :" << y<<endl;
         cout<<"if you want to continue:(enter 1)";

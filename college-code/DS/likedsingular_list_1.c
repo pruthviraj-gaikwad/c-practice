@@ -8,7 +8,7 @@ struct node
 
 void printresult(struct node *ptr)
 {
-    int i = 0;
+    int i = 0; 
     while (ptr != NULL)
     {
         i++;
@@ -41,7 +41,7 @@ struct node *insertionIn(struct node *head, int index)
 {
     struct node *ptr = (struct node *)malloc(sizeof(struct node));
     struct node *p = head;
-    int i = 0;
+    int i = 1;
     while (i != index - 1)
     {
         p = p->next;
@@ -52,6 +52,7 @@ struct node *insertionIn(struct node *head, int index)
     p->next = ptr;
     return head;
 }
+
 struct node *insertion_at_last(struct node *head)
 {
     struct node *ptr = (struct node *)malloc(sizeof(struct node));
@@ -65,6 +66,7 @@ struct node *insertion_at_last(struct node *head)
     p->next = ptr;
     return head;
 }
+
 struct node *delete_first(struct node *head)
 {
     struct node *ptr = head;
@@ -72,6 +74,7 @@ struct node *delete_first(struct node *head)
     free(ptr);
     return head;
 }
+
 struct node *delete_In(struct node *head, int index)
 {
     struct node *p = head;
@@ -85,21 +88,22 @@ struct node *delete_In(struct node *head, int index)
     free(q);
     return head;
 }
+
 struct node *delete_last(struct node *head)
 {
     struct node *p = head;
     struct node *q = head->next;
-    int i = 0;
+
     while (q->next != NULL)
     {
         p = p->next;
         q = q->next;
-        i++;
     }
     p->next = q->next;
     free(q);
     return head;
 }
+
 int main()
 {
     struct node *head;
@@ -128,21 +132,21 @@ int main()
     six->next = NULL;
     printf("befor insertion\n");
     printresult(head);
-    struct node *y = insertion_at_first(head);
-    printf("after insertion_at_first\n");
+    // struct node *y = insertion_at_first(head);
+    // printf("after insertion_at_first\n");
 
-    printresult(y);
-    struct node *h = insertionIn(head, 2);
-    printf("after insertionIn\n");
+    // printresult(y);
+    // struct node *h = insertionIn(head, 3);
+    // printf("after insertionIn\n");
+    // printresult(h);
 
-    printresult(h);
-    struct node *j = insertion_at_last(head);
-    printf("after insertion_at_last\n");
+    // struct node *j = insertion_at_last(head);
+    // printf("after insertion_at_last\n");
 
-    printresult(j);
-    struct node *u = after_node(head, second, 70);
-    printresult(u);
-    printresult(delete_last(head));
+    // printresult(j);
+    // struct node *u = after_node(head, second, 70);
+    // printresult(u);
+    // printresult(delete_last(head));
     free(head);
     free(second);
     free(thired);

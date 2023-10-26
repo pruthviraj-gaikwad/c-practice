@@ -6,7 +6,7 @@ struct node
     int data;
     struct node *next;
 };
-
+ 
 void displyList(struct node *head)
 {
     struct node* ptr=head;
@@ -16,14 +16,14 @@ void displyList(struct node *head)
         ptr = ptr->next;
     } while (ptr != head);
 }
-
+  
 int main()
 {
     struct node *head;
     struct node *second;
     struct node *third;
     struct node *fourth;
-    head = (struct node *)malloc(sizeof(struct node));
+    head = (struct node *)malloc(sizeof(struct node))1o;
     second = (struct node *)malloc(sizeof(struct node));
     third = (struct node *)malloc(sizeof(struct node));
     fourth = (struct node *)malloc(sizeof(struct node));

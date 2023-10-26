@@ -2,7 +2,7 @@
 using namespace std;
 
 class complex;//forward declaration 
-
+  
 class privat
 {
     int p;

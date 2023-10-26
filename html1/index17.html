@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector
+    </title>
+    <style>
+        /* element selector */
+        div {
+            /* background-color: blue; */
+        }
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /*  id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        div>p {
+            color: blue;
+            background-color: black;
+        }
+
+        /* descendant sector */
+        div p {
+            background-color: navajowhite;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  pseudo selector
+         */
+        a:visited {
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        i am a div
+        <p>is me</p>
+    </div>
+    <div id="green">
+        <h1>
+            pruthvi is here
+        </h1>
+        <p>you are form heven</p>
+        <article>
+            <p>i am a para inside div </p>
+        </article>
+    </div>
+    <a href="https://www.google.com">go to google</a>
+    <br>
+
+<a href="https://www.facebook.com">goto facebook</a>
+</body>
+
+</html>

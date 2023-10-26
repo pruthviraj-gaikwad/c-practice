@@ -5,7 +5,7 @@ class point
     int a;
     int b;
 
-public:
+public:  
     int get(int x, int y);
     void print();
     friend point sum(point x,point y);

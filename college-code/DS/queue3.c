@@ -12,7 +12,7 @@ struct queue
 int isFull(struct queue *p)
 {
     if ((p->r + 1) % size == p->f)
-    {
+    { 
         return 1;
     }
     else

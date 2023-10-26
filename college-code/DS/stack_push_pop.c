@@ -3,7 +3,6 @@
 #define size 100
 struct stack
 {
-    // int size;
     int arr[size];
     int top;
 };
@@ -42,7 +41,9 @@ int pop(struct stack *q)
     }
     else
     {
-        return q->arr[(q->top)--];
+        int x = q->arr[(q->top)];
+        q->top--;
+        return x;
     }
 }
 void push(struct stack *q, int x)
@@ -64,20 +65,21 @@ int main()
     printf("before push:\n");
     printf("empty: %d\n", empty(&q));
     printf("full: %d\n", full(&q));
-    push(&q,69);
-    push(&q,30);
-    push(&q,40);
-    push(&q,60);
-    push(&q,10);
-    push(&q,10);
-    push(&q,10);
-    printf("after pushing :\n");
-    printf("empty: %d\n", empty(&q));
-    printf("full: %d\n", full(&q));
-   printf("%d\n",pop(&q));
-   printf("%d\n",pop(&q));
-   printf("%d\n",pop(&q));
-   printf("%d\n",pop(&q));
-   printf("%d\n",pop(&q));
-   printf("%d\n",pop(&q));
+    push(&q, 69);
+    push(&q, 30);
+    // push(&q, 40);
+    // push(&q, 60);
+    // push(&q, 10);
+    // push(&q, 10);
+    // push(&q, 10);
+    // printf("after pushing :\n");
+    // printf("empty: %d\n", empty(&q));
+    // printf("full: %d\n", full(&q));
+    // printf("%d\n", pop(&q));
+    // printf("%d\n", pop(&q));
+    // printf("%d\n", pop(&q));
+    // printf("%d\n", pop(&q));
+    // printf("%d\n", pop(&q));
+    printf("%d\n", pop(&q));
+    printf("%d\n", pop(&q));
 }
